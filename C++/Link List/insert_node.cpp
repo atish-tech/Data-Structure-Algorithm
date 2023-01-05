@@ -1,23 +1,21 @@
-// program to insert node at first and last.
-#include<conio.h>
-#include<iostream>
-#include<stdlib.h>
-#include"../Library/Link List/link_list.h"
-using namespace std;
-using namespace first;
+// program to create node of 3 link list
 
-// cout<<endl<<head<<
+#include<iostream>
+using namespace std;
+
+struct node
+{
+    int data;
+    node *next;
+    node(int data)
+    {
+        this->data=data;
+        next=NULL;
+    }
+};
+
 int main()
 {
-    insert(111);
-    insert(222);
-    insert(400);
-    insert(401);
-    print();
-    cout<<" "<<Delete();
-    cout<<" "<<Delete();
-    cout<<endl;
-    print();
-    getch();
-    return 0;
+    node *head = new node(5);
+    cout<<head->data;
 }

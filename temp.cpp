@@ -1,23 +1,27 @@
 #include <iostream>
 using namespace std;
-class A
-{
-    int a, b;
 
-public:
-    A(int a, int b)
+void linearsearch(int *a, int n)
+{
+    int temp = -1;
+    for (int i = 0; i < 5; i++)
     {
-        this->a = a;
-        this->b = b;
+        if (a[i] == n)
+        {
+            cout << "element found at location: " << i << endl;
+            temp = 0;
+            break;
+        }
     }
-    void show()
-    {
-        cout << a << " " << b;
-    }
-};
+    if (temp == -1)
+        cout << "element not found" << endl;
+}
 int main()
 {
-    A obj(10, 30);
-    obj.show();
+    int arr[5] = {33, 56, 86, 56, 29};
+    cout << "Enter element that you want to search" << endl;
+    int num;
+    cin >> num;
+    linearsearch(arr, num);
     return 0;
 }
