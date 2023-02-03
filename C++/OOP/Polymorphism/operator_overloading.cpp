@@ -15,6 +15,7 @@ class complex
     complex operator+ (complex &ptr)
     {
         complex temp;
+        cout<<x<<" ptr "<<ptr.x <<endl;
         temp.x=x+ptr.x;
         temp.y=y+ptr.y;
         return temp;

@@ -85,9 +85,7 @@ namespace last
         }
     }
 }
-
 // print data in link list
-
 void print()
 {
     node* temp=head;
